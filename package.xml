@@ -1,0 +1,23 @@
+<package format="3">
+  <name>depthai</name>
+  <version>1.5.0</version>
+  <description>DepthAI core is a C++ library which comes with firmware and an API to interact with OAK Platform</description>
+
+  <maintainer email="sachin@luxonis.com">Sachin Guruswamy</maintainer>
+  <author email="martin@luxonis.com">Martin Peterlin</author>
+
+  <license>MIT</license>
+
+  <url type="website">https://www.luxonis.com/</url>
+  
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>libusb-1.0-dev</depend>
+  <depend>libopencv-dev</depend>
+  <depend>nlohmann-json-dev</depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+
+</package>
