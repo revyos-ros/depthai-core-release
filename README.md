@@ -1,2 +1,25 @@
+## depthai (galactic) - 1.5.0-1
+
+The packages in the `depthai` repository were released into the `galactic` distro by running `/usr/bin/bloom-release --rosdistro galactic --track galactic depthai --edit` on `Tue, 10 May 2022 22:46:01 -0000`
+
+The `depthai` package was released.
+
+Version of package(s) in repository `depthai`:
+
+- upstream repository: https://github.com/luxonis/depthai-core.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `1.5.0-1`
+
+Versions of tools used:
+
+- bloom version: `0.11.1`
+- catkin_pkg version: `0.4.24`
+- rosdep version: `0.21.0`
+- rosdistro version: `0.8.3`
+- vcstools version: `0.1.42`
+
+
 # depthai-core-release
 Release repository for depthai core in ros bloom
