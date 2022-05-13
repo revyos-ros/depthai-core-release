@@ -6,6 +6,9 @@ if(NOT WIN32)
     set(HUNTER_CONFIGURATION_TYPES "Release" CACHE STRING "Hunter dependencies list of build configurations")
 endif()
 
+set(HUNTER_SKIP_PACKAGE_nlohmann_json OFF)
+set(BUILD_SHARED_LIBS ON)
+
 # Create a custom toolchain to pass certain options to dependencies
 set(gen_toolchain "${CMAKE_CURRENT_BINARY_DIR}/generated/toolchain.cmake")
 
@@ -40,7 +43,7 @@ if(WIN32)
 endif()
 
 # Create depthai project
-project(depthai VERSION "1.5.0" LANGUAGES CXX C)
+project(depthai VERSION "2.15.4" LANGUAGES CXX C)
 get_directory_property(has_parent PARENT_DIRECTORY)
 if(has_parent)
     set(DEPTHAI_VERSION ${PROJECT_VERSION} PARENT_SCOPE)
@@ -81,10 +84,9 @@ list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_LIST_DIR}/cmake/")
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_LIST_DIR}/cmake/sanitizers")
 
 # Additional options
-option(HUNTER_SKIP_PACKAGE_nlohmann_json "Use json from system installed packages" ON)
+option(DEPTHAI_CLANG_FORMAT "Enable clang-format target"                  ON)
 option(DEPTHAI_CLANG_TIDY "Enable clang-tidy checks during compilation" OFF)
 option(DEPTHAI_SANITIZE "Enable Address and Undefined sanitizers for library, examples and tests" OFF)
-option(DEPTHAI_CLANG_FORMAT "Enable clang-format target"                  OFF)
 
 # Should install depthai core libraries
 option(DEPTHAI_INSTALL   "Enable install target for depthai-core targets" ON)
@@ -127,6 +129,7 @@ set(PROJECT_EXPORT_GROUP "${PROJECT_NAME}Targets")
 
 ## Check if cloned or sources
 find_package(Git)
+find_package(ament_cmake QUIET)
 if(GIT_FOUND)
     execute_process(
         COMMAND ${GIT_EXECUTABLE} rev-parse --is-inside-work-tree
@@ -648,3 +651,4 @@ if(DEPTHAI_HAVE_OPENCV_SUPPORT)
         $<$<BOOL:${tmp_includes}>:\n-I\'$<JOIN:${tmp_includes},\'\n-I\'>\'>\n"
     )
 endif()
+ament_package()
