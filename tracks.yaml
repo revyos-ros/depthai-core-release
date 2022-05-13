@@ -21,7 +21,7 @@ tracks:
     patches: null
     release_inc: '1'
     release_repo_url: null
-    release_tag: '"v:{version}"'
+    release_tag: '"vr:{version}"'
     ros_distro: galactic
     vcs_type: git
     vcs_uri: https://github.com/luxonis/depthai-core.git
