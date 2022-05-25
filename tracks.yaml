@@ -21,7 +21,7 @@ tracks:
     patches: null
     release_inc: '1'
     release_repo_url: null
-    release_tag: '"vr:{version}"'
+    release_tag: '"ros-v:{version}"'
     ros_distro: foxy
     vcs_type: git
     vcs_uri: https://github.com/luxonis/depthai-core.git
@@ -48,7 +48,7 @@ tracks:
     patches: null
     release_inc: '2'
     release_repo_url: null
-    release_tag: '"vr:{version}"'
+    release_tag: '"ros-v:{version}"'
     ros_distro: galactic
     vcs_type: git
     vcs_uri: https://github.com/luxonis/depthai-core.git
@@ -75,7 +75,7 @@ tracks:
     patches: null
     release_inc: '1'
     release_repo_url: null
-    release_tag: '":{version}"'
+    release_tag: '"ros-v:{version}"'
     ros_distro: noetic
     vcs_type: git
     vcs_uri: https://github.com/luxonis/depthai-core.git
