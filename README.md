@@ -1,3 +1,26 @@
+## depthai (humble) - 2.15.5-1
+
+The packages in the `depthai` repository were released into the `humble` distro by running `/usr/bin/bloom-release depthai --rosdistro humble` on `Thu, 02 Jun 2022 18:21:19 -0000`
+
+The `depthai` package was released.
+
+Version of package(s) in repository `depthai`:
+
+- upstream repository: https://github.com/luxonis/depthai-core.git
+- release repository: https://github.com/luxonis/depthai-core-release.git
+- rosdistro version: `2.15.4-1`
+- old version: `2.15.4-1`
+- new version: `2.15.5-1`
+
+Versions of tools used:
+
+- bloom version: `0.11.1`
+- catkin_pkg version: `0.5.0`
+- rosdep version: `0.21.0`
+- rosdistro version: `0.8.3`
+- vcstools version: `0.1.42`
+
+
 ## depthai (galactic) - 2.15.5-1
 
 The packages in the `depthai` repository were released into the `galactic` distro by running `/usr/bin/bloom-release depthai --rosdistro galactic` on `Thu, 02 Jun 2022 17:52:40 -0000`
