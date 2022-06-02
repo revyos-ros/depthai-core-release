@@ -2,14 +2,9 @@
 Changelog for package depthai
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-2.15.4 (2022-05-09)
--------------------
-* Release 2.15.4
-* add ament package:
-* Cleanup
-* Added ament found condition
-* CHnaged version for testing
-* Added author
+2.15.5 (2022-06-02)
+-----------
+* EEPROM FIX
 * Json fix (`#478 <https://github.com/luxonis/depthai-core/issues/478>`_)
   * Fixed nlohmann json < v3.9.0 compat and toolchain generation
   * turn off clang format
@@ -17,17 +12,11 @@ Changelog for package depthai
   Co-authored-by: TheMarpe <martin@luxonis.com>
 * Empty-Commit
 * Update package.xml
-* ROS2 release test commit (`#475 <https://github.com/luxonis/depthai-core/issues/475>`_)
-  * Empty-Commit
-  * Change libusb versions
-* Change libsub to libusb-dev
-* Empty-Commit
-* Updated sub modules
-* Modified json in package.xml and changed the changelog"
-* Added Changelog file
-* Merge remote-tracking branch 'origin/main' into ros-release
-* Updatedf package xml, cmake list to include json from system install
-* WIP package.xml
+* Contributors: Sachin, Sachin Guruswamy
+
+2.15.4 (2022-05-09)
+-------------------
+* Release 2.15.4
 * Update docs; removed unsupported AprilTag families
 * FW: VideoEncoder: fix keyframe rate config, fix resource computations for JPEG
   (e.g: MJPEG for 4K video 30fps + MJPEG for still 12MP ~1fps)
@@ -83,7 +72,7 @@ Changelog for package depthai
 * Merge branch 'main' into develop
 * Update FW: improve PoE throughput and latency (set net.inet.tcp.delayed_ack=0),
   add config for MTU (not advised to change for now) and other sysctl params
-* Contributors: Dale Phurrough, SzabolcsGergely, TheMarpe, alex-luxonis, szabi-luxonis, Sachin Guruswamy
+* Contributors: Dale Phurrough, SzabolcsGergely, TheMarpe, alex-luxonis, szabi-luxonis
 
 2.15.3 (2022-04-22)
 -------------------
@@ -1805,8 +1794,15 @@ Changelog for package depthai
 2.0.0 (2021-03-01)
 ------------------
 
-1.5.0 (2022-05-10)
+1.7.4 (2022-05-20)
 ------------------
+* Updated ament cmake rule
+* created a dummy release for noetic test
+* Made ament condirtional
+* Updated changelog:
+* add ament package:
+* Cleanup
+* Added ament found condition
 * CHnaged version for testing
 * Added author
 * Json fix (`#478 <https://github.com/luxonis/depthai-core/issues/478>`_)
