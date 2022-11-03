@@ -12,9 +12,9 @@ namespace dai {
  */
 struct MonoCameraProperties : PropertiesSerializable<Properties, MonoCameraProperties> {
     /**
-     * Select the camera sensor resolution: 1280×720, 1280×800, 640×400, 640×480
+     * Select the camera sensor resolution: 1280×720, 1280×800, 640×400, 640×480, 1920×1200
      */
-    enum class SensorResolution : int32_t { THE_720_P, THE_800_P, THE_400_P, THE_480_P };
+    enum class SensorResolution : int32_t { THE_720_P, THE_800_P, THE_400_P, THE_480_P, THE_1200_P };
 
     /*
      * Initial controls applied to MonoCamera node
@@ -39,8 +39,16 @@ struct MonoCameraProperties : PropertiesSerializable<Properties, MonoCameraPrope
      * Camera sensor FPS
      */
     float fps = 30.0;
+    /**
+     * Frame pool size for the main output, ISP processed
+     */
+    int numFramesPool = 3;
+    /**
+     * Frame pool size for the `raw` output
+     */
+    int numFramesPoolRaw = 3;
 };
 
-DEPTHAI_SERIALIZE_EXT(MonoCameraProperties, initialControl, boardSocket, imageOrientation, resolution, fps);
+DEPTHAI_SERIALIZE_EXT(MonoCameraProperties, initialControl, boardSocket, imageOrientation, resolution, fps, numFramesPool, numFramesPoolRaw);
 
 }  // namespace dai
