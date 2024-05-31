@@ -1,3 +1,26 @@
+## depthai (jazzy) - 2.26.0-1
+
+The packages in the `depthai` repository were released into the `jazzy` distro by running `/usr/bin/bloom-release --new-track --rosdistro jazzy --track jazzy depthai` on `Fri, 31 May 2024 13:21:58 -0000`
+
+The `depthai` package was released.
+
+Version of package(s) in repository `depthai`:
+
+- upstream repository: https://github.com/luxonis/depthai-core.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `2.26.0-1`
+
+Versions of tools used:
+
+- bloom version: `0.12.0`
+- catkin_pkg version: `1.0.0`
+- rosdep version: `0.22.2`
+- rosdistro version: `0.9.0`
+- vcstools version: `0.1.42`
+
+
 ## depthai (noetic) - 2.26.0-1
 
 The packages in the `depthai` repository were released into the `noetic` distro by running `/usr/bin/bloom-release depthai --rosdistro noetic` on `Fri, 31 May 2024 13:06:13 -0000`
