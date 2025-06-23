@@ -1,3 +1,26 @@
+## depthai (jazzy) - 2.30.0-1
+
+The packages in the `depthai` repository were released into the `jazzy` distro by running `/root/venv/bin/bloom-release -r jazzy depthai --override-release-repository-push-url git@github.com:revyos-ros/depthai-core-release.git` on `Mon, 23 Jun 2025 08:01:51 -0000`
+
+The `depthai` package was released.
+
+Version of package(s) in repository `depthai`:
+
+- upstream repository: https://github.com/luxonis/depthai-core.git
+- release repository: https://github.com/revyos-ros/depthai-core-release.git
+- rosdistro version: `2.30.0-1`
+- old version: `2.29.0-1`
+- new version: `2.30.0-1`
+
+Versions of tools used:
+
+- bloom version: `0.12.0`
+- catkin_pkg version: `1.0.0`
+- rosdep version: `0.25.1`
+- rosdistro version: `1.0.1`
+- vcstools version: `0.1.42`
+
+
 ## depthai (jazzy) - 2.29.0-1
 
 The packages in the `depthai` repository were released into the `jazzy` distro by running `/home/z572/gits/revyos-ros/venv2/bin/bloom-release -r jazzy depthai --override-release-repository-push-url git@github.com:revyos-ros/depthai-core-release.git` on `Fri, 17 Jan 2025 06:49:20 -0000`
